@@ -1,0 +1,273 @@
+/*Master Styles*/
+
+body {
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    color: rgb(0, 255, 55);
+}
+
+.title {
+text-align: center;
+padding-bottom: 45px;
+font-size: 35px;
+}
+
+.banner {
+margin-left: 750px;
+}
+
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+
+.left-side {
+    display: flex;
+
+}
+
+.brand {
+    margin-top: -35px;
+}
+
+.brand img {
+    height : 100px;
+    width : 100px;
+}
+
+.right-side > div > a {
+    color: white;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+.right-side > div > a:hover {
+    color: rgb(0, 255, 55);
+
+}
+   
+
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: rgb(0, 255, 55);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid rgb(0, 255, 55);
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(0, 255, 55);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+.brand:hover {
+    transition: color 0.5s;
+    color: rgb(0, 255, 55);
+}
+
+/* Portfolio Style */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+  }
+
+.portfolio-img-background {
+      height: 350px;
+      width: 100%;
+      background-size: cover;
+      background-position: center ;  
+      background-repeat: no-repeat;
+  }
+
+  /* Add Audio to play on click of picture  */
+
+
+.img-text-wrapper {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+
+.logo-wrapper img {
+      width: 50%;
+  }
+
+  .img-text-wrapper .subtitle {
+      transition: 1s;
+      color: transparent;
+      font-weight: 700px;
+  }
+
+  .img-text-wrapper:hover .subtitle {
+      font-weight: 700px;
+      color: rgb(0, 255, 55);
+      text-transform: capitalize;
+  }
+
+/* About Page */
+h1 {
+    color: rgb(0, 255, 55);
+}
+
+button{
+    background:rgb(0, 255, 55);
+    color:rgb(0, 0, 0);
+    border:none;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor: pointer;
+    transition:800ms ease all;
+    outline:none;
+    font-family: 'Permanent Marker', cursive;
+    align-content: center;
+    margin-left: 1000px;
+  }
+  button:hover{
+    background:rgb(0, 0, 0);
+    color:#00ff2a;
+  }
+  button:before button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgb(0, 255, 55);
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  /* maybe have to put button in different classes and style separately for the correct alignment 0*/
+  h1, h3{
+    color: rgb(0, 255, 55);
+    text-align: center; 
+    text-transform: capitalize;
+    font-size: 30pt;
+  }
+
+  video{
+    margin-left: 1000px;
+    
+}
+
+  /* Contact Page */
+
+  iframe{
+      margin-left: 1000px;
+      margin-bottom: 250pt;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .submit {
+    background-color: rgb(0, 255, 55);
+    color: rgb(0, 255, 55);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: rgb(0, 255, 55);
+  }
+  
+  .contactcontainer {
+    border-radius: 5px;
+    background-color: rgb(0, 255, 55);
+    padding: 20px;
+  }
+
+
+/* Footer Styles */
+.fa {
+  padding: 50px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  margin-bottom: 100px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+  
